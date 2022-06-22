@@ -21,7 +21,7 @@
      function myFunction(){
         
         var obj = document.querySelector('video')
-       alert(obj)
+      
         if (obj.paused) {
             obj.play();
         } else {
@@ -31,7 +31,7 @@
 
         </script>
 
-<video ontouchstart="myFunction()" id="carouselVideo" class="c1 video-js vjs-default-skin carousel-cover" autoplay playsinline controls 
+<video onclick="myFunction()" id="carouselVideo" class="c1 video-js vjs-default-skin carousel-cover" autoplay playsinline controls 
 muted #herovideo poster='../../assets/images/demo_video_poster.PNG' >
   <source src="https://docs.versalearth.com/versal-demo.mp4" type='video/mp4' />
   <track label="English" kind="captions" srclang="en">
