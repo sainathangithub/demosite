@@ -17,9 +17,13 @@
     </style>
 
     <script >
-        
+        var obj = document.getElementById('carouselVideo')
      function myFunction(){
-         alert('test')
+        if (obj.paused) {
+            obj.play();
+        } else {
+            obj.pause();
+        }
      }
 
         </script>
