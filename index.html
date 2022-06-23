@@ -17,6 +17,20 @@
     </style>
 
     <script >
+
+      function myFunction1(){
+      var txt = document.querySelector('txtResult')
+    
+        var obj = document.querySelectorAll('video')   
+       
+          if (obj[1].paused) {
+          obj[1].play();
+        } else {
+          obj[1].pause();
+        }  
+
+
+     }
        
      function myFunction(){
       var txt = document.querySelector('txtResult')
@@ -51,7 +65,7 @@ muted #herovideo poster='../../assets/images/demo_video_poster.PNG' >
   <track label="English" kind="captions" srclang="en">
 </video>
 
-<video id="marketingVideo" class="video-js vjs-default-skin"  controls #videoPlayer playsinline
+<video ontouchstart="myFunction1()" id="marketingVideo" class="video-js vjs-default-skin"  controls #videoPlayer playsinline
 poster='../../assets/images/marketing_video_poster.png' preload="auto" >
   <source src="https://docs.versalearth.com/Versal_Marketing_Video.mp4" type='video/mp4' />
   <track label="English" kind="captions" srclang="en">
