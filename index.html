@@ -21,15 +21,22 @@
      function myFunction(){
       var txt = document.querySelector('txtResult')
     
-        var obj = document.querySelector('video')
-     
+        var obj = document.querySelectorAll('video')   
        
      
-        if (obj.paused) {
-            obj.play();
+        if (obj[0].paused) {
+          obj[0].play();
         } else {
-            obj.pause();
+          obj[0].pause();
         }  
+
+        if (obj[1].paused) {
+          obj[1].play();
+        } else {
+          obj[1].pause();
+        }  
+
+
      }
 
         </script>
