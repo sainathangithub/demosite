@@ -19,19 +19,26 @@
     <script >
        
      function myFunction(){
-        
+      var txt = document.querySelector('txtResult')
+    
         var obj = document.querySelector('video')
-      alert(obj.paused)
+        alert(obj)
+        console.log(obj)
+      /* alert(obj.paused)
         if (obj.paused) {
             obj.play();
         } else {
             obj.pause();
-        } 
+        }  */
      }
 
         </script>
 
-<video onclick="myFunction()" id="carouselVideo" class="c1 video-js vjs-default-skin carousel-cover" autoplay playsinline controls 
+        <div id="txtResult">
+
+          </div>
+
+<video ontouchstart="myFunction()" id="carouselVideo" class="c1 video-js vjs-default-skin carousel-cover" autoplay playsinline controls 
 muted #herovideo poster='../../assets/images/demo_video_poster.PNG' >
   <source src="https://docs.versalearth.com/versal-demo.mp4" type='video/mp4' />
   <track label="English" kind="captions" srclang="en">
