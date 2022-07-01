@@ -18,34 +18,11 @@
 
     <script >
 
-      function myFunction1(){
-      var txt = document.querySelector('txtResult')
-    
-        var obj = document.querySelectorAll('video')   
-       
-          if (obj[1].paused) {
-          obj[1].play();
-        } else {
-          obj[1].pause();
-        }  
-
-
-     }
-       
-     function myFunction2(){
-       console.log('touchmove')
-     }
-
-     function myFunction3(){
-       console.log('touchend')
-     }
-
-
+  
      function myFunction(){
-       console.log('touchstart')
-      var txt = document.querySelector('txtResult')
-    
-        var obj = document.querySelectorAll('video')   
+      alert('touchstart')
+      var txt = document.querySelector('txtResult')    
+      var obj = document.querySelectorAll('video')   
        
      
         if (obj[0].paused) {
@@ -54,12 +31,7 @@
           obj[0].pause();
         }  
 
-        if (obj[1].paused) {
-          obj[1].play();
-        } else {
-          obj[1].pause();
-        }  
-
+     
 
      }
 
@@ -71,7 +43,7 @@
 
 
 
-<video ontouchstart="myFunction1()" id="marketingVideo" class="video-js vjs-default-skin"  autoplay controls #videoPlayer playsinline
+<video ontouchstart="myFunction()" id="marketingVideo" class="video-js vjs-default-skin"  autoplay controls #videoPlayer playsinline
  preload="metadata" >
   <source src="https://docs.versalearth.com/Versal_Marketing_Video.mp4" type='video/mp4' />
   <track label="English" kind="captions" srclang="en">
